@@ -7,7 +7,7 @@ $record_color:#d39999;
 $mid_bar_color: #F9F1F0;
 //-fonts
 // mixins
-// all styles
+//-------------------------------------------------------------------------- common --------------------------------
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +16,8 @@ $mid_bar_color: #F9F1F0;
 body,
 html {
     overflow-x: hidden;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: #33302e;
 }
 
 .wrapper {
@@ -25,7 +26,20 @@ html {
     width: 100%;
 }
 
-// header
+.section_title {
+    font-size: 3.666em;
+    line-height: 1.3em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+//-------------------------------------------------------------------------- / common ------------------------------
+//-------------------------------------------------------------------------- intro ------------------------------
 .top_bar {
     background-color: $top_bar_bg_color;
     display: flex;
@@ -127,10 +141,6 @@ html {
     }
 }
 
-section {
-    padding: 90px 0;
-}
-
 .top_banner_part {
     background: url(../assets/banner.jpg) no-repeat 0 50%;
     background-size: cover;
@@ -171,55 +181,154 @@ section {
     }
 }
 
-.working_with_it {
-    text-align: center;
-    p.h2 {
-        font-size: 36px;
+//-------------------------------------------------------------------------- / intro ------------------------------
+// -------------------------------------------------------------------------------------------- section_skills
+.section_skills {
+    &__subtitle {
+        text-align: center;
+        max-width: 520px;
+        font-size: 13px;
+        text-transform: uppercase;
     }
-    p {
-        font-size: 16px;
-        margin: 10px 0;
+    .block_skills_row {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: 180px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        a {
+            text-decoration: none;
+            color: $title_text_color;
+            font-size: 20px;
+        }
+        .block_circle {
+            height: 180px;
+            border-radius: 50%;
+            background-color: #70616C;
+            margin-bottom: 20px;
+        }
+        .b_c_1 {
+            background: url(../assets/img/200608134755.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .b_c_2 {
+            background: url(../assets/img/ee3657e19ced86349ab1275c199aee991e.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .b_c_3 {
+            background: url(../assets/img/maxresdefault.jpg) no-repeat 20% 50%;
+            background-size: cover;
+        }
+        .b_c_4 {
+            background: url(../assets/img/1-682342-RlQBoxrB-1024x679.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .b_c_5 {
+            background: url(../assets/img/U5qoQxDwcUk.jpg) no-repeat center center;
+            background-size: cover;
+        }
     }
 }
 
-.block_skills_row {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    li {
-        width: 180px;
-        text-align: center;
-        margin: 40px 0;
-    }
-    a {
-        text-decoration: none;
-        color: $title_text_color;
-        font-size: 20px;
-    }
-    .block_circle {
-        height: 180px;
-        border-radius: 50%;
-        background-color: #70616C;
-        margin-bottom: 20px;
-    }
-    .b_c_1 {
-        background: url(../assets/img/200608134755.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    .b_c_2 {
-        background: url(../assets/img/ee3657e19ced86349ab1275c199aee991e.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    .b_c_3 {
-        background: url(../assets/img/maxresdefault.jpg) no-repeat 20% 50%;
-        background-size: cover;
-    }
-    .b_c_4 {
-        background: url(../assets/img/1-682342-RlQBoxrB-1024x679.jpg) no-repeat center center;
-        background-size: cover;
-    }
-    .b_c_5 {
-        background: url(../assets/img/U5qoQxDwcUk.jpg) no-repeat center center;
-        background-size: cover;
+// -------------------------------------------------------------------------------------------- / section_skills
+// -------------------------------------------------------------------------------------------- section_advantages
+.section_advantages {
+    .advantages_area {
+        display: flex;
+        flex-direction: column;
+        .advantages_area_block {
+            display: flex;
+            justify-content: space-between;
+        }
+        .advantages_area_item {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            margin-bottom: 45px;
+            margin-top: 45px;
+            &__image {
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                background-color: #F9F1F0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            &__description {
+                font-size: 15px;
+                line-height: 25px;
+                padding-left: 34px;
+                padding-right: 10px;
+                text-align: left;
+            }
+        }
     }
 }
+
+// -------------------------------------------------------------------------------------------- / section_advantages
+// -------------------------------------------------------------------------------------------- section_price
+.section_price {
+    .price_area {
+        display: flex;
+        justify-content: center;
+        .price_area_item {
+            flex: 1;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            margin: 15px;
+            padding: 47px 30px;
+            background-color: #F9F1F0;
+            overflow: hidden;
+            .discount_label {
+                position: absolute;
+                right: -34px;
+                top: 18px;
+                text-align: center;
+                color: #fff;
+                font-size: 17px;
+                line-height: 35px;
+                background-color: #c9c4c0;
+                padding: 0 50px;
+                transform: rotate(45deg);
+            }
+            .discount_label_color {
+                background-color: #f79d95;
+            }
+            &__title {
+                font-size: 32px;
+                margin-bottom: 16px;
+            }
+            &__subtitle {
+                line-height: 1em;
+                margin-bottom: 16px;
+            }
+            &__description {
+                font-size: 18px;
+                line-height: 1.2em;
+                margin-bottom: 35px;
+            }
+            .main_button {
+                display: inline-block;
+                text-decoration: none;
+                border-radius: 25px;
+                background-color: #D39999;
+                color: white;
+                padding: 15px 34px;
+                font-size: 16px;
+                cursor: pointer;
+                font-family: "PT Serif", serif;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+// -------------------------------------------------------------------------------------------- / section_price

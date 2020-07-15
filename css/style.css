@@ -5,12 +5,23 @@
 body,
 html {
   overflow-x: hidden;
-  font-family: sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  color: #33302e; }
 
 .wrapper {
   margin: 0 auto;
   max-width: 1170px;
   width: 100%; }
+
+.section_title {
+  font-size: 3.666em;
+  line-height: 1.3em;
+  text-align: center;
+  margin-bottom: 50px; }
+
+section {
+  padding-top: 65px;
+  padding-bottom: 65px; }
 
 .top_bar {
   background-color: #70616C;
@@ -92,9 +103,6 @@ html {
   .bar_list_menu :hover .list_my_work_direction {
     display: block; }
 
-section {
-  padding: 90px 0; }
-
 .top_banner_part {
   background: url(../assets/banner.jpg) no-repeat 0 50%;
   background-size: cover;
@@ -129,43 +137,118 @@ section {
     .preview_name button:hover {
       background-color: #dcaeae; }
 
-.working_with_it {
-  text-align: center; }
-  .working_with_it p.h2 {
-    font-size: 36px; }
-  .working_with_it p {
-    font-size: 16px;
-    margin: 10px 0; }
+.section_skills__subtitle {
+  text-align: center;
+  max-width: 520px;
+  font-size: 13px;
+  text-transform: uppercase; }
 
-.block_skills_row {
+.section_skills .block_skills_row {
   list-style: none;
   display: flex;
   justify-content: space-between; }
-  .block_skills_row li {
+  .section_skills .block_skills_row li {
     width: 180px;
     text-align: center;
     margin: 40px 0; }
-  .block_skills_row a {
+  .section_skills .block_skills_row a {
     text-decoration: none;
     color: #33302E;
     font-size: 20px; }
-  .block_skills_row .block_circle {
+  .section_skills .block_skills_row .block_circle {
     height: 180px;
     border-radius: 50%;
     background-color: #70616C;
     margin-bottom: 20px; }
-  .block_skills_row .b_c_1 {
+  .section_skills .block_skills_row .b_c_1 {
     background: url(../assets/img/200608134755.jpg) no-repeat center center;
     background-size: cover; }
-  .block_skills_row .b_c_2 {
+  .section_skills .block_skills_row .b_c_2 {
     background: url(../assets/img/ee3657e19ced86349ab1275c199aee991e.jpg) no-repeat center center;
     background-size: cover; }
-  .block_skills_row .b_c_3 {
+  .section_skills .block_skills_row .b_c_3 {
     background: url(../assets/img/maxresdefault.jpg) no-repeat 20% 50%;
     background-size: cover; }
-  .block_skills_row .b_c_4 {
+  .section_skills .block_skills_row .b_c_4 {
     background: url(../assets/img/1-682342-RlQBoxrB-1024x679.jpg) no-repeat center center;
     background-size: cover; }
-  .block_skills_row .b_c_5 {
+  .section_skills .block_skills_row .b_c_5 {
     background: url(../assets/img/U5qoQxDwcUk.jpg) no-repeat center center;
     background-size: cover; }
+
+.section_advantages .advantages_area {
+  display: flex;
+  flex-direction: column; }
+  .section_advantages .advantages_area .advantages_area_block {
+    display: flex;
+    justify-content: space-between; }
+  .section_advantages .advantages_area .advantages_area_item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-top: 45px; }
+    .section_advantages .advantages_area .advantages_area_item__image {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background-color: #F9F1F0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0; }
+    .section_advantages .advantages_area .advantages_area_item__description {
+      font-size: 15px;
+      line-height: 25px;
+      padding-left: 34px;
+      padding-right: 10px;
+      text-align: left; }
+
+.section_price .price_area {
+  display: flex;
+  justify-content: center; }
+  .section_price .price_area .price_area_item {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 15px;
+    padding: 47px 30px;
+    background-color: #F9F1F0;
+    overflow: hidden; }
+    .section_price .price_area .price_area_item .discount_label {
+      position: absolute;
+      right: -34px;
+      top: 18px;
+      text-align: center;
+      color: #fff;
+      font-size: 17px;
+      line-height: 35px;
+      background-color: #c9c4c0;
+      padding: 0 50px;
+      transform: rotate(45deg); }
+    .section_price .price_area .price_area_item .discount_label_color {
+      background-color: #f79d95; }
+    .section_price .price_area .price_area_item__title {
+      font-size: 32px;
+      margin-bottom: 16px; }
+    .section_price .price_area .price_area_item__subtitle {
+      line-height: 1em;
+      margin-bottom: 16px; }
+    .section_price .price_area .price_area_item__description {
+      font-size: 18px;
+      line-height: 1.2em;
+      margin-bottom: 35px; }
+    .section_price .price_area .price_area_item .main_button {
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 25px;
+      background-color: #D39999;
+      color: white;
+      padding: 15px 34px;
+      font-size: 16px;
+      cursor: pointer;
+      font-family: "PT Serif", serif;
+      font-size: 16px; }
