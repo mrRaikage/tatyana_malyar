@@ -1,7 +1,8 @@
 @charset "UTF-8";
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body,
 html {
@@ -99,7 +100,7 @@ section {
 .top_banner_part {
   background: url(../assets/banner.jpg) no-repeat 0 50%;
   background-size: cover;
-  height: 500px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -130,6 +131,31 @@ section {
     .preview_name button:hover {
       background-color: #dcaeae; }
 
+.section_about .about_me_wrap {
+  display: flex;
+  justify-content: space-between; }
+
+.section_about .photo_box {
+  width: 50%;
+  max-height: 500px;
+  text-align: center; }
+  .section_about .photo_box img {
+    height: 100%;
+    width: auto; }
+
+.section_about .text_box {
+  padding: 50px 20px;
+  width: 50%; }
+  .section_about .text_box__title {
+    font-size: 37px;
+    color: #33302e; }
+  .section_about .text_box__subtitle {
+    color: #6F6F6F;
+    margin-bottom: 23px; }
+  .section_about .text_box__description {
+    font-size: 15px;
+    color: #33302E; }
+
 .section_skills__subtitle {
   text-align: center;
   max-width: 520px;
@@ -154,20 +180,58 @@ section {
     background-color: #70616C;
     margin-bottom: 20px; }
   .section_skills .block_skills_row .b_c_1 {
-    background: url(../assets/img/200608134755.jpg) no-repeat center center;
+    background: url(../assets/img/family.jpg) no-repeat center center;
     background-size: cover; }
   .section_skills .block_skills_row .b_c_2 {
-    background: url(../assets/img/ee3657e19ced86349ab1275c199aee991e.jpg) no-repeat center center;
+    background: url(../assets/img/relationships.jpg) no-repeat center center;
     background-size: cover; }
   .section_skills .block_skills_row .b_c_3 {
-    background: url(../assets/img/maxresdefault.jpg) no-repeat 20% 50%;
+    background: url(../assets/img/self.jpg) no-repeat 20% 50%;
     background-size: cover; }
   .section_skills .block_skills_row .b_c_4 {
-    background: url(../assets/img/1-682342-RlQBoxrB-1024x679.jpg) no-repeat center center;
+    background: url(../assets/img/emotions.jpg) no-repeat center center;
     background-size: cover; }
   .section_skills .block_skills_row .b_c_5 {
-    background: url(../assets/img/U5qoQxDwcUk.jpg) no-repeat center center;
+    background: url(../assets/img/profession.jpg) no-repeat center center;
     background-size: cover; }
+
+.section_skills .item_reverse {
+  background-color: #f9f1f0; }
+  .section_skills .item_reverse div {
+    flex-direction: row-reverse; }
+    .section_skills .item_reverse div .text_box {
+      align-items: flex-start; }
+
+.section_skills .skills_item {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  .section_skills .skills_item div {
+    display: flex;
+    justify-content: space-between; }
+    .section_skills .skills_item div .photo_box {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 360px;
+      height: 360px; }
+      .section_skills .skills_item div .photo_box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .section_skills .skills_item div .text_box {
+      width: 60%;
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: column; }
+      .section_skills .skills_item div .text_box__title {
+        margin-top: 0;
+        font-size: 30px;
+        color: #33302e;
+        margin-bottom: 35px; }
+      .section_skills .skills_item div .text_box__list {
+        color: #d39898; }
+      .section_skills .skills_item div .text_box .list_item {
+        font-size: 20px;
+        color: #6F6F6F; }
 
 .section_advantages .advantages_area {
   display: flex;

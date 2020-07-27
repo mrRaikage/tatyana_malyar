@@ -11,6 +11,7 @@ $mid_bar_color: #F9F1F0;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body,
@@ -133,7 +134,7 @@ section {
 .top_banner_part {
     background: url(../assets/banner.jpg) no-repeat 0 50%;
     background-size: cover;
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -171,6 +172,40 @@ section {
 }
 
 //-------------------------------------------------------------------------- / intro ------------------------------
+// -------------------------------------------------------------------------------------------- section_about
+.section_about {
+    .about_me_wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    .photo_box {
+        width: 50%;
+        max-height: 500px;
+        text-align: center;
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+    .text_box {
+        padding: 50px 20px;
+        width: 50%;
+        &__title {
+            font-size: 37px;
+            color: #33302e;
+        }
+        &__subtitle {
+            color: #6F6F6F;
+            margin-bottom: 23px;
+        }
+        &__description {
+            font-size: 15px;
+            color: #33302E;
+        }
+    }
+}
+
+//-------------------------------------------------------------------------- / section_about -----------------------
 // -------------------------------------------------------------------------------------------- section_skills
 .section_skills {
     &__subtitle {
@@ -200,24 +235,71 @@ section {
             margin-bottom: 20px;
         }
         .b_c_1 {
-            background: url(../assets/img/200608134755.jpg) no-repeat center center;
+            background: url(../assets/img/family.jpg) no-repeat center center;
             background-size: cover;
         }
         .b_c_2 {
-            background: url(../assets/img/ee3657e19ced86349ab1275c199aee991e.jpg) no-repeat center center;
+            background: url(../assets/img/relationships.jpg) no-repeat center center;
             background-size: cover;
         }
         .b_c_3 {
-            background: url(../assets/img/maxresdefault.jpg) no-repeat 20% 50%;
+            background: url(../assets/img/self.jpg) no-repeat 20% 50%;
             background-size: cover;
         }
         .b_c_4 {
-            background: url(../assets/img/1-682342-RlQBoxrB-1024x679.jpg) no-repeat center center;
+            background: url(../assets/img/emotions.jpg) no-repeat center center;
             background-size: cover;
         }
         .b_c_5 {
-            background: url(../assets/img/U5qoQxDwcUk.jpg) no-repeat center center;
+            background: url(../assets/img/profession.jpg) no-repeat center center;
             background-size: cover;
+        }
+    }
+    .item_reverse {
+        background-color: #f9f1f0;
+        div {
+            flex-direction: row-reverse;
+            .text_box {
+                align-items: flex-start;
+            }
+        }
+    }
+    .skills_item {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        div {
+            display: flex;
+            justify-content: space-between;
+            .photo_box {
+                border-radius: 50%;
+                overflow: hidden;
+                width: 360px;
+                height: 360px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text_box {
+                width: 60%;
+                padding: 50px 20px;
+                display: flex;
+                flex-direction: column;
+                &__title {
+                    margin-top: 0;
+                    font-size: 30px;
+                    color: #33302e;
+                    margin-bottom: 35px;
+                }
+                &__list {
+                    color: #d39898;
+                }
+                .list_item {
+                    font-size: 20px;
+                    color: #6F6F6F;
+                }
+            }
         }
     }
 }
