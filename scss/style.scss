@@ -28,9 +28,18 @@ html {
 
 .section_title {
     font-size: 3.666em;
-    line-height: 1.3em;
+    line-height: 3em;
     text-align: center;
     margin-bottom: 50px;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+        display: block;
+        width: 30px;
+        border-bottom: 2px solid $record_color;
+    }
 }
 
 section {
@@ -118,26 +127,6 @@ section {
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 13px;
-    }
-    .list_my_work_direction {
-        display: none;
-        position: absolute;
-        list-style: none;
-        padding: 10px 20px;
-        width: 160px;
-        background-color: $top_bar_bg_color;
-        transition: all 4s ease;
-        a {
-            padding: 10px 0;
-            color: $top_bar_text_color;
-            line-height: 1;
-        }
-        li {
-            margin: 12px 0;
-        }
-    }
-     :hover .list_my_work_direction {
-        display: block;
     }
 }
 
@@ -332,3 +321,50 @@ section {
 }
 
 // -------------------------------------------------------------------------------------------- / section_price
+.section_qualification {
+    .qualification_promo_area {
+        display: flex;
+        .promo_text {
+            flex: 1;
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            li {
+                line-height: 1.6em;
+                font-size: 20px;
+                &::before {
+                    content: '•';
+                    color: $record_color;
+                    position: relative;
+                    top: 5px;
+                    font-size: 30px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .promo_img_area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            .promo_img_box {
+                display: flex;
+                justify-content: center;
+                .doc_img_container {
+                    width: 200px;
+                    height: auto;
+                    margin: 5px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
