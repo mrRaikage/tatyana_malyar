@@ -30,8 +30,7 @@ html {
     border-bottom: 2px solid #d39999; }
 
 section {
-  padding-top: 65px;
-  padding-bottom: 65px; }
+  padding-bottom: 100px; }
 
 .top_bar {
   background-color: #70616C;
@@ -89,6 +88,7 @@ section {
   list-style: none;
   align-items: center; }
   .bar_list_menu a {
+    display: block;
     color: #6f6f6f;
     padding: 0 10px;
     text-decoration: none;

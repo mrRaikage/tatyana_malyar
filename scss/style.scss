@@ -44,8 +44,7 @@ html {
 }
 
 section {
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-bottom: 100px;
 }
 
 //-------------------------------------------------------------------------- / common ------------------------------
@@ -54,6 +53,8 @@ section {
     background-color: $top_bar_bg_color;
     display: flex;
     justify-content: space-around;
+    // position: fixed;
+    // width: 100%;
 }
 
 .top_bar_menu {
@@ -121,6 +122,7 @@ section {
     list-style: none;
     align-items: center;
     a {
+        display: block;
         color: #6f6f6f;
         padding: 0 10px;
         text-decoration: none;
