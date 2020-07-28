@@ -129,6 +129,12 @@ section {
         letter-spacing: 1px;
         font-size: 13px;
     }
+    .menu_item {
+        transition: .3s;
+        &:hover {
+            background-color: darken($mid_bar_color, 10%);
+        }
+    }
 }
 
 .top_banner_part {
@@ -148,7 +154,8 @@ section {
     justify-content: space-evenly;
     color: $title_text_color;
     height: 100%;
-    width: 400px;
+    max-width: 400px;
+    margin-left: 50%;
     .h1 {
         font-size: 48px;
         margin: 10px 0;
@@ -209,6 +216,7 @@ section {
 // -------------------------------------------------------------------------------------------- section_skills
 .section_skills {
     &__subtitle {
+        margin: 0 auto;
         text-align: center;
         max-width: 520px;
         font-size: 13px;
@@ -219,7 +227,7 @@ section {
         display: flex;
         justify-content: space-between;
         li {
-            width: 180px;
+            max-width: 180px;
             text-align: center;
             margin: 40px 0;
         }
@@ -273,7 +281,7 @@ section {
             .photo_box {
                 border-radius: 50%;
                 overflow: hidden;
-                width: 360px;
+                max-width: 360px;
                 height: 360px;
                 img {
                     width: 100%;
@@ -322,7 +330,7 @@ section {
             margin-top: 45px;
             &__image {
                 height: 80px;
-                width: 80px;
+                max-width: 80px;
                 border-radius: 50%;
                 background-color: #F9F1F0;
                 display: flex;
@@ -342,6 +350,38 @@ section {
 }
 
 // -------------------------------------------------------------------------------------------- / section_advantages
+.section_about_consultation {
+    .about_consultation_box {
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .revert {
+        .photo_box {
+            text-align: end;
+        }
+    }
+    .photo_box {
+        flex: 1;
+    }
+    .text_box {
+        flex: 1;
+        display: flex;
+        padding: 0 20px;
+        .text_list {
+            // margin-left: 20px;
+            li {
+                color: $record_color;
+                padding-left: 20px;
+                margin-bottom: 16px;
+            }
+        }
+        .list_item {
+            color: $title_text_color;
+        }
+    }
+}
+
 // -------------------------------------------------------------------------------------------- section_price
 .section_price {
     .price_area {
@@ -438,7 +478,7 @@ section {
                 display: flex;
                 justify-content: center;
                 .doc_img_container {
-                    width: 200px;
+                    max-width: 200px;
                     height: auto;
                     margin: 5px;
                     img {
@@ -449,4 +489,38 @@ section {
             }
         }
     }
+}
+
+.section_contacts {
+    .contacts_box {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    i {
+        color: $record_color;
+        font-size: 70px;
+        margin-bottom: 40px;
+    }
+    .contacts_item {
+        flex: 1;
+        padding: 70px 0;
+    }
+    .contacts_title {
+        color: #3d3d3d;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .logo_name {
+        margin-top: 42px;
+        text-align: center;
+    }
+    // .contacts_subtitle {}
+}
+
+.footer {
+    background-color: $top_bar_bg_color;
+    padding: 30px 0;
+    text-align: center;
+    color: $top_bar_text_color;
 }
