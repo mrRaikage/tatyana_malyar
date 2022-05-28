@@ -17,17 +17,27 @@ html {
 
 .section_title {
   font-size: 3.666em;
-  line-height: 3em;
   text-align: center;
-  margin-bottom: 50px; }
-  .section_title::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    margin-left: -15px;
-    display: block;
-    width: 30px;
-    border-bottom: 2px solid #d39999; }
+  margin-bottom: 50px;
+  height: 3em;
+  position: relative;
+}
+
+.section_title .section_subtitle {
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.section_title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -15px;
+  display: block;
+  width: 30px;
+  border-bottom: 2px solid #d39999; }
 
 section {
   padding-bottom: 100px; }
