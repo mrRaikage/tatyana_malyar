@@ -88,14 +88,10 @@ section {
 .mid_bar {
   background-color: #F9F1F0; }
 
-.mid_bar_menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
 .bar_list_menu {
   display: flex;
   list-style: none;
+  justify-content: center;
   align-items: center; }
   .bar_list_menu a {
     display: block;
