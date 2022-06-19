@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="desktop">
         <div class="top_bar">
             <div class="top_bar_menu wrapper">
                 <span>
@@ -56,9 +56,60 @@
             </div>
         </div>
     </header>
+    <header id="header" class="mobile">
+        <div class="burger-wrapper">
+            <div class="bar_list_record">
+                <a href="tel:+380505453667">Запис на консультацію</a>
+            </div>
+            <svg id="burger-button" viewBox="0 0 100 80" width="40" height="40" fill="#FFFFFF">
+                <rect width="100" height="10"></rect>
+                <rect y="30" width="100" height="10"></rect>
+                <rect y="60" width="100" height="10"></rect>
+            </svg>
+        </div>
+        <div id="bar-wrapper" class="bar-wrapper">
+            <div class="top_bar">
+                <div class="top_bar_menu wrapper">
+                <span>
+                <i class="fas fa-home"></i>
+                <a href="">м. Київ вул. Тичини 12</a>
+                </span>
+                    <ul class="bar_list_contacts">
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            <a href="mailto:tatyana.malyar10@gmail.com">tatyana.malyar10@gmail.com</a>
+                        </li>
+                        <div class="mobile-contacts">
+                            <li>
+                                <i class="fas fa-mobile-alt"></i>
+                                <a href="tel:+380505453667">+38(050)545-36-67</a>
+                            </li>
+                            <li class="insta">
+                                <a href="https://www.instagram.com/tatyanamalyar/"><img src="assets/icons/instagram-sketched.svg" alt="inst"></a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="mid_bar">
+                <div class="mid_bar_menu wrapper">
+                    <ul id="bar_list_menu" class="bar_list_menu">
+                        <li class="menu_item"><a href="#about">Про мене</a></li>
+                        <li class="menu_item"><a href="#skills">З чим я працюю</a></li>
+                        <li class="menu_item"><a href="#advantages">Переваги для Вас</a></li>
+                        <li class="menu_item"><a href="#about_consultation">Як я працюю</a></li>
+                        <li class="menu_item"><a href="#price">Вартість</a></li>
+                        <li class="menu_item"><a href="#qualification">Кваліфікація</a></li>
+                        <li class="menu_item"><a href="#">Публікації</a></li>
+                        <li class="menu_item"><a href="#contacts">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     <section class="top_banner_part">
         <div class="wrapper">
-            <div class="preview_name">
+            <div class="preview_name desktop">
                 <div>
                     <div class="name"><img src="https://x-lines.ru/letters/i/cyrillicscript/0444/000000/48/0/4ntpbpqtomea9wf74nanbwrh4napbq6tt9eay.png"></div>
                     <p class="h1">Психолог</p>
@@ -68,8 +119,18 @@
             </div>
         </div>
     </section>
+    <section class="mobile">
+        <div class="preview_name">
+            <div>
+                <div class="name"><img src="https://x-lines.ru/letters/i/cyrillicscript/0444/000000/48/0/4ntpbpqtomea9wf74nanbwrh4napbq6tt9eay.png"></div>
+                <p class="h1">Психолог</p>
+                <p class="h1">Психотерапевт</p>
+                <p>Який готовий бути поруч з Вами у непростий життєвий період</p>
+            </div>
+        </div>
+    </section>
     <section id="about" class="section_about">
-        <div class="section_title">Про Мене</div>
+        <div class="section_title wrapper">Про Мене</div>
         <div class="wrapper">
             <div class="about_me_wrap">
                 <div class="photo_box">
@@ -93,7 +154,7 @@
 
     </section>
     <section id="skills" class="section_skills ">
-        <div class="section_title">З чим я працюю</div>
+        <div class="section_title wrapper">З чим я працюю</div>
         <div class="wrapper">
 
             <ul class="block_skills_row wrapper">
@@ -216,7 +277,7 @@
     <!-- ---------------------------------------------------------------------------------------------------------- advantages -->
 
     <section id="advantages" class="section_advantages">
-        <div class="section_title">Переваги для вас</div>
+        <div class="section_title wrapper">Переваги для вас</div>
         <div class="advantages_area wrapper">
             <div class="advantages_area_block">
                 <div class="advantages_area_item">
@@ -270,7 +331,7 @@
     <!-- ---------------------------------------------------------------------------------------------------------- how_i_work -->
     <section id="about_consultation" class="section_about_consultation">
         <div class="wrapper">
-            <div class="section_title">Як я працюю</div>
+            <div class="section_title wrapper">Як я працюю</div>
             <div class="about_consultation_box">
                 <div class="photo_box">
                     <img src="assets/img/1.png" alt="">
@@ -303,7 +364,7 @@
 
     <!-- ---------------------------------------------------------------------------------------------------------- price -->
     <section class="section_price" id="price">
-        <div class="section_title">Вартість сеансу
+        <div class="section_title wrapper">Вартість сеансу
             <div class="section_subtitle">Варіанти проведення сеансу консультації проводяться в умовах кабинету, сенсорноі кімнати, по телефону та онлайн.</div>
         </div>
         <div class="price_area wrapper">
@@ -333,7 +394,7 @@
     <!-- ---------------------------------------------------------------------------------------------------------- / price -->
     <!-- ---------------------------------------------------------------------------------------------------------- qualification -->
     <section id="qualification" class="section_qualification wrapper">
-        <div class="section_title">Кваліфікація</div>
+        <div class="section_title wrapper">Кваліфікація</div>
         <div class="qualification_promo_area">
             <div class="promo_text">
                 <ul>
@@ -379,7 +440,7 @@
     <!-- ---------------------------------------------------------------------------------------------------------- / qualification -->
     <section id="contacts" class="section_contacts container">
         <div class="wrapper">
-            <div class="section_title">Контакти</div>
+            <div class="section_title wrapper">Контакти</div>
             <div class="contacts_box">
                 <div class="contacts_item">
                     <i class="fas fa-mobile-alt"></i>

@@ -19,7 +19,7 @@ html {
   font-size: 3.666em;
   text-align: center;
   margin-bottom: 50px;
-  height: 3em;
+  padding: 35px 0;
   position: relative;
 }
 
@@ -258,6 +258,7 @@ section {
     margin-bottom: 45px;
     margin-top: 45px; }
     .section_advantages .advantages_area .advantages_area_item__image {
+      width: 100%;
       height: 80px;
       max-width: 80px;
       border-radius: 50%;
@@ -409,3 +410,192 @@ section {
   padding: 30px 0;
   text-align: center;
   color: #F9F1F0; }
+.mobile {
+  display: none;
+}
+
+@media (max-width: 440px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 101;
+  }
+  .burger-wrapper {
+    background-color: #70616C;
+    text-align: right;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bar_list_record {
+    background-color: #d39999;
+    transition: background 0.3s;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .bar_list_record a {
+    color: #FFFFFF;
+    text-decoration: none; }
+  .bar-wrapper {
+    /*position: fixed;*/
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  .top_bar_menu,
+  .bar_list_contacts {
+    display: block;
+  }
+  .bar_list_menu {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .bar_list_menu a {
+    padding: 10px 20px;
+    line-height: 1;
+  }
+  .top_bar_menu {
+    padding: 20px;
+  }
+  .top_bar_menu > span,
+  .bar_list_contacts li {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+
+  .bar_list_contacts .bar_list_record {
+    display: none;
+  }
+  .preview_name img {
+    width: 100%;
+  }
+  .preview_name {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 50px 20px 0;
+  }
+  .top_banner_part {
+    margin-top: 80px;
+    background: url(../assets/banner.jpg) no-repeat 14% 50%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .mobile-contacts {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mid_bar {
+    height: calc(100% - 240px);
+  }
+  .mid_bar_menu,
+  .bar_list_menu {
+    height: 100%;
+  }
+
+  .section_about .about_me_wrap {
+    flex-direction: column;
+  }
+  .section_about .photo_box {
+    width: 100%;
+    overflow: hidden;
+  }
+  .section_about .photo_box img {
+    height: 100%;
+    width: 100%;
+  }
+  .section_about .text_box {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .section_skills .skills_item {
+    padding: 80px 20px;
+  }
+  .item_reverse div,
+  .skills_item div {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .skills_item div .text_box {
+    width: 100% !important;
+  }
+  .skills_item div .photo_box {
+    text-align: center;
+    height: 300px !important;
+    width: 300px !important;
+  }
+  .skills_item:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .section_title {
+    font-size: 2em;
+  }
+  section {
+    padding-bottom: 50px;
+  }
+  .section_advantages .advantages_area .advantages_area_block {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .section_about_consultation .about_consultation_box {
+    margin-top: 50px;
+  }
+  .section_about_consultation .about_consultation_box {
+    display: block;
+  }
+  .section_about_consultation .text_box {
+    padding: 20px 40px 0;
+  }
+  .about_consultation_box.revert {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .section_title .section_subtitle {
+    padding: 0 20px;
+  }
+  .section_price .price_area {
+    flex-direction: column;
+  }
+  .section_qualification .qualification_promo_area {
+    display: block;
+    padding: 0 20px;
+  }
+  .section_qualification .qualification_promo_area .promo_text li + li {
+    margin-top: 16px;
+  }
+  .section_qualification .qualification_promo_area .promo_img_area {
+    margin-top: 40px;
+  }
+  .section_contacts .contacts_box {
+    flex-direction: column;
+  }
+  .section_contacts .contacts_item {
+    padding: 50px 20px;
+  }
+  .contacts_title {
+    margin-top: 20px;
+  }
+  .contacts_subtitle {
+    margin-top: 10px;
+  }
+  .section_skills .block_skills_row {
+    display: none;
+  }
+
+}
