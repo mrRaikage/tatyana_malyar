@@ -1,4 +1,10 @@
 @charset "UTF-8";
+
+@font-face{
+  font-family: "AnastasiaScript";
+  src: url("../assets/fonts/AnastasiaScript.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +15,10 @@ html {
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
   color: #33302e; }
+
+.logo_name {
+  font-size: 24px;
+}
 
 .wrapper {
   margin: 0 auto;
